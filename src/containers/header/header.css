@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+    
+}
+.header-content_contact{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.header-content_contact button{
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+
+    background:-moz-linear-gradient(90deg, rgba(5, 29, 183, 1) 0%, rgba(61, 80, 157, 1) 50%, rgba(147, 146, 153, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(5, 29, 183, 1) 0%, rgba(61, 80, 157, 1) 50%, rgba(147, 146, 153, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(5, 29, 183, 1) 0%, rgba(61, 80, 157, 1) 50%, rgba(147, 146, 153, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939299', endColorstr='#051DB7', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(5, 29, 183, 1) 0%, rgba(61, 80, 157, 1) 50%, rgba(147, 146, 153, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(5, 29, 183, 1) 0%, rgba(61, 80, 157, 1) 50%, rgba(147, 146, 153, 1) 100%);
+
+}
+
+.header-content h1{
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 75px;
+    letter-spacing: 0.04rem;
+}
+.header__text_p{
+     letter-spacing: 0.04rem;
+     margin-left: 100px;
+     text-align: center;
+}
+.header-image{
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.header-image img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    
+}
+@media screen and (max-width:750px){
+    .header {
+        flex-direction: column;
+
+    }
+    .header-content h1{
+        font-weight: 400px;
+        font-size: 29px;
+        line-height: 45px;
+        letter-spacing: 0.04rem;
+    }
+
+    .header-image img{
+        margin-top: 50px;
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+    }
+}
+

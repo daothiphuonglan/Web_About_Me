@@ -1,0 +1,24 @@
+.work-content{
+   background-color: rgb(17, 18, 18);
+   display: grid;
+   flex-direction: row; 
+   list-style: none;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+.work_project{
+   background-color: aliceblue;
+   height: 150px;
+   padding-top: 60px;
+}
+
+  
+
+
+@media screen and (max-width:700px){
+   .work-content{
+      display: grid;
+      grid-template-columns: 1fr;
+      
+   }
+}
+
