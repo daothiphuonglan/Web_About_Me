@@ -1,8 +1,11 @@
 import React from 'react';
+import Modal from './Modal'
 import skill from './skill.css'
 import {GiCheckMark} from 'react-icons/gi'
-
+import {useEffect, useState} from 'react'
+import { useGlobalContext } from '../contex';
 const Skill = () => {
+  const {openModal,closeModal}= useGlobalContext()
     
     return (
         <div className='wrapper-skill'>
@@ -15,18 +18,36 @@ const Skill = () => {
 
                 <div className='wrapper-content'>
                     <div className='main language'>
-                      <h1>JAVASCRIPT</h1>
-                      <h1>JAVA</h1>
+                      <button className='btn_ js' onClick={openModal} >JAVASCRIPT</button>
+                      {/* start leve of js*/ }
+                     <Modal title='Leve of Jvascript'></Modal>
+                      {/* end leve of js*/ }
+                      <button className='btn_ java'  onClick={openModal}>JAVA</button>
+                      {/* start leve of js*/ }
+                     <Modal title="Leve of Java"  ></Modal>
+                      {/* end leve of js*/ }
                     </div>
                     <div className='main data'>
-                      <h1>REACTJS</h1>
+                       <button className='btn_ react' onClick={openModal}>REACTJS</button>
+                      {/* start leve of js*/ }
+                     <Modal title="Leve of Java"  ></Modal>
+                      {/* end leve of js*/ }
                     </div>
                     <div className='main tools'>
-                      <h1>MYSQL</h1>
+                     <button className='btn_ MSQL' onClick={openModal}>MYSQL</button>
+                     {/* start leve of js*/ }
+                     <Modal title="Leve of Java"  ></Modal>
+                      {/* end leve of js*/ }
                     </div>
                     <div className='main framework'>
-                      <h1>FIGMA</h1>
-                      <h1>GIT</h1>
+                      <button className="btn_ figma" onClick={openModal}>FIGMA</button>
+                      {/* start leve of js*/ }
+                     <Modal title="Leve of Java"  ></Modal>
+                      {/* end leve of js*/ }
+                      <button className="btn_ git" onClick={openModal}>Git</button>
+                      {/* start leve of js*/ }
+                     <Modal title="Leve of git"  ></Modal>
+                      {/* end leve of js*/ }
                     </div>
                 </div>
             </div>
