@@ -4,6 +4,7 @@ import skill from './skill.css'
 import {GiCheckMark} from 'react-icons/gi'
 import {useEffect, useState} from 'react'
 import { useGlobalContext } from '../contex';
+
 const Skill = () => {
   const {openModal,closeModal}= useGlobalContext()
     

@@ -1,6 +1,5 @@
 import React from 'react';
-import './work.css';
-import 'react-icons'
+import './work.css'
 
 import Features from "../features/Features"
 
